@@ -1,0 +1,57 @@
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.line-break{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+} 
+
+.line-break span{ 
+    background: rgb(209, 213, 219); 
+    padding:0 10px; 
+}
+        
+.social-btn{
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.btn-submit{
+    background-color: rgba(239, 68, 68);
+}
+
+.copyright{
+    color: gray;
+}
+
+footer{
+    margin-top: 4px;
+    background-color: #27272A;
+    color: #27272A;
+    width: 100%;
+}
+
+.support{
+    color: gray;
+    padding: 0px;
+     padding-right: 3px;
+}
+.support:hover{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .support{
+    padding: 2px;
+    padding-right: 8px;
+    }
+}

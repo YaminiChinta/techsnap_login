@@ -1,229 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>LogIn | Techsnap</title>
     
-    <style>
-      h2 {
-        width: 100%; 
-        text-align: center; 
-        border-bottom: 1px solid #000; 
-        line-height: 0.1em;
-        margin: 10px 0 20px; 
-      } 
-
-      h2 span { 
-          background:rgb(212, 211, 211); 
-          padding:0 10px; 
-      }
-
-      .set-scroll {
-        max-height: calc(100vh-100px);
-      }
-      @media only screen and (max-width: 900px) {
-      footer-list {
-        display: block;
-      }
-    }
-    </style>
-    <title>Login | Techsnap </title>
-  </head>
-  <body class="text-gray-800 antialiased bg-black" >
-    <div
-          class="absolute top-0 w-full h-full bg-black"
-          style="background-image: url(./assets/img/register_bg_2.png); background-size: 100%; background-repeat: no-repeat;"
-        ></div>
-    <main>
-      <section class="absolute w-full h-full ">
-        <div class="overflow-y-auto set-scroll">
-          <img src="assets\img\logo_pink.jpg" class="items-center content-center mx-auto" style="width: auto; height: 80px;" alt="NOT FOUND">
-        <div class="container mx-auto px-4 h-full mt-6">
-          <div class="flex content-center items-center justify-center h-full">
-            <div class="w-full lg:w-4/12 px-2 ">
-              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0">
-                <div class="rounded-t mb-0 px-6 py-6">
-                  <div class="text-center mb-3">
-                    <h6 class="text-black text-lg font-bold">Create Your Free Account</h6>
-                  </div>
-                  <div class="btn-wrapper text-center grid-rows-1 gap-1">
-                    <button
-                      class="p-1 bg-white active:bg-gray-100 text-gray-800 font-normal rounded outline-none focus:outline-none 
-                      uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      <img
-                        alt="..."
-                        class="w-5"
-                        src="./assets/img/google.svg"
-                      />Google
-                    </button>
-                    <button
-                      class="p-1 bg-white active:bg-gray-100 text-gray-800 font-normal rounded outline-none focus:outline-none 
-                      uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      <img
-                        alt="..."
-                        class="w-5"
-                        src="./assets/linkedin.svg"
-                      />Linkedin
-                      </button>
-                      <button
-                      class="p-1 bg-white active:bg-gray-100 text-gray-800 font-normal rounded outline-none focus:outline-none 
-                      uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      <img
-                        alt="..."
-                        class="w-5"
-                        src="./assets/Facebook-f_Logo-Blue-Logo.wine.svg" 
-                      />Facebook
-                    </button>
-                  </div>
-                  <!-- <hr class="mt-6 border-b-1 border-gray-400" /> -->
+</head>
+<body style="background-color: black;">
+    <div class="overflow-auto" style="margin: 10px;">
+        <img src="assets\img\logo_pink.jpg" class="rounded mx-auto d-block" style="height: 100px; width:auto;" alt="Responsive image">
+        <div class="card card-body mx-auto col-lg-4 col-md-8 col-sm-10 col-xs-10" style="background-color:  rgb(209, 213, 219);">
+            <h2 class="font-weight-bold mb-2 text-center"> Create your free account</h2>
+            <i class="bi bi-linkedin"></i>
+            <div class="social-account row pt-2 pb-4">
+                <div class="social-login col-4">
+                    <button class="btn facebook-btn social-btn btn-block" type="button"><span><i class="fab fa-facebook-f " 
+                        style="color: #3b5998;"></i> Facebook</span> </button>
                 </div>
-                <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                  <div class="text-black text-center mb-3 font-bold">
-                    <h2><span>Or</span></h2>
-                    <!-- <div style="width: 160px;"><hr class="border-b-1 border-gray-400" ></div>
-                    <small>Or</small> -->
-                  </div>
-                  <form>
-                    <div class="relative w-full mb-3">
-                      <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password"
-                        >Username</label
-                      ><input
-                        type="text"
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Username"
-                        style="transition: all 0.15s ease 0s;"
-                      />
-                    </div>
-                    <div class="relative w-full mb-3">
-                      <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password"
-                        >Email</label
-                      ><input
-                        type="email"
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Email"
-                        style="transition: all 0.15s ease 0s;"
-                      />
-                    </div>
-                    <div class="relative w-full mb-3">
-                      <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password"
-                        >Password</label
-                      ><input
-                        type="password"
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Password"
-                        style="transition: all 0.15s ease 0s;"
-                      />
-                    </div>
-                    <div class="text-center mt-6">
-                      <button
-                        class="bg-red-500 text-black active:bg-pink-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
-                        type="button"
-                        style="transition: all 0.15s ease 0s;"
-                      >
-                        Start Learning for Free
-                      </button>
-                      <p class="text-left" style="font-size: 10px; float: left;">By continuing, you accept our <a href="#" style="color: rgb(42, 91, 252);">Terms of Use,</a>
-                         our <a href="#" style="color: rgb(42, 91, 252);">Privacy Policy</a> and that your data is stored in the USA. 
-                         You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).</p>
-                      
-                    </div>
-                  </form>
+                <div class="social-login col-4">
+                    <button class="btn google-btn social-btn btn-block" type="button"><span><i class="fab fa-google ">
+
+                    </i> Google</span> </button>
                 </div>
-              </div>
-              
+                <div class="social-login col-4">
+                    <button class="btn linked-btn social-btn btn-block" type="button"><span><i class="fab fa-linkedin-in " 
+                        style="color: #2867B2;"></i> Linkedin</span> </button>
+                </div>
             </div>
-          </div>
+            <h5 class="line-break mb-4"><span>Or</span></h5>
+            <form>
+                <div class="form-group font-weight-bold">
+                    <label for="exampleInputusername">Username</label>
+                    <input type="text" class="form-control" id="exampleInputusername"  placeholder="Enter User Name">
+                </div>
+                <div class="form-group font-weight-bold">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group font-weight-bold">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-submit btn-block font-weight-bold mb-2">Start Learning for Free</button>
+                <small>
+                    By continuing, you accept our 
+                    <a href="#" style="color: rgb(42, 91, 252);">Terms of Use,</a>our 
+                    <a href="#" style="color: rgb(42, 91, 252);">Privacy Policy</a> 
+                    and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).
+                </small>
+            </form>
         </div>
-
-        <div class="w-full lg:w-4/12 rounded-lg shadow-lg mx-auto container bg-gray-300 mb-4">
-          <div class="py-3 text-center">
+        <div class="card card-body col-lg-4 col-md-8 col-sm-8 col-xs-8 pb-0 pt-2 mx-auto mt-2 text-center font-weight-bold" 
+        style="background-color:  rgb(209, 213, 219);">
             <p>Already have an Account? <a href="#" style="color: rgb(42, 91, 252);">Sign In.</a></p>
-          </div>
         </div>
-        </div>
-
-        <footer class="w-full bottom-0 bg-gray-900 pb-6">
-          <div class="container mx-auto px-4">
-            <hr class="mb-6 border-b-1 border-gray-700" />
-            <div class="flex flex-wrap items-center md:justify-between justify-center">
-              <div class="w-full md:w-4/12 px-4">
-                <div class="text-sm text-white font-semibold py-1">
-                  Copyright © 2019
-                  <a
-                    href="#"
-                    class="text-white hover:text-gray-400 text-sm font-semibold py-1"
-                    >Techsnap</a
-                  >
-                </div>
-              </div>
-              <div class="w-full md:w-4/12 px-4 sm:w-1/12">
-                <ul
-                  class="flex flex-wrap list-none lg:justify-end footer-list" 
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                      >Creative Tim</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                      >Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                      >MIT License</a
-                    >
-                  </li>
-                </ul>
-              </div>
+    </div>
+    <footer class="mt-2 pt-3">
+        <div class="container-fluid row">
+            <div class="copyright col">
+            <p>Copyright &copy 2013 - Techsnap</p>
             </div>
-          </div>
-        </footer>
-      </section>
-    </main>
-  </body>
+            <div class="social float-right">
+            <a href="#" class="support col-1 col-sm-1 " >Privacy Policy</a>
+            <a href="#" class="support col-1 " >About us</a>
+            <a href="#" class="support col-1 " >Cookies</a>
+            <a href="#" class="support col-1 " >Terms of Use</a>
+            </div>
+        </div>
+      </footer>
+</body>
 </html>
